@@ -65,7 +65,7 @@ request.onload = function () {
     //Task 5. Print the country which uses US Dollars as currency.
 
     var usDollarCountries = countries.filter((item) => {
-        return item.currencies[0].symbol=="$";
+        return item.currencies[0].code=="USD";
     }).map((item)=>{
         return item.name;
     });
